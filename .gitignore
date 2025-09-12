@@ -1,0 +1,86 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Project-specific ignores based on your structure
+# Ignore output directories
+output/
+*/output/
+
+# Ignore temporary build files in activity folders
+act*/build/
+act*/bin/
+act*/obj/
+act*/*.exe
+act*/*.out
+act*/temp/
+
+# Ignore VS Code settings (if using VS Code)
+.vs/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Ignore IDE specific files
+*.vcxproj.user
+*.sln.docstates
+*.suo
+*.user
+
+# Ignore temporary files
+*~
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Ignore Mac system files
+.DS_Store
+.DS_Store?
+
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore algorithm analysis specific files
+# Uncomment these if you generate these types of files:
+# *.csv
+# *.xlsx
+# *.png
+# *.jpg
+# *.pdf
+
+# Keep important project files
+!README.md
+!Makefile
+!*.md
