@@ -5,7 +5,9 @@
 namespace kmp {
 
   /*
-  
+  Crea un LPS (Longest Prefix Sufix) y cada vez que falla en
+  una comparación del KMP, se regresa al indice LPS[j-1] del
+  patrón para verificar evitar iterar el patrón desde el inicio
   Complejidad: O(n)
   */
   std::vector<std::pair<int, int>> stringMatch(const std::string& text, const std::string& pattern){
@@ -30,6 +32,7 @@ namespace kmp {
 
     // Bebug
     
+    std::cout << "Debug LPS:\n";
     for(int i = 0; i < m; i++){
       std::cout << pattern[i] << " ";
     }
@@ -57,7 +60,7 @@ namespace kmp {
       }
 
       if(j == m){
-        result.push_back({i-m, i});
+        result.emplace_back(i-m, i);
         j = LPS[j-1];
       }
     }

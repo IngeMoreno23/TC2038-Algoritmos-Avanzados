@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++23 -Wall
 TARGET = output/main
-SOURCES = act1.6/greedyCoinCollecting.cpp
+SOURCES = act2.1/suffix-array.cpp
 
 $(TARGET): $(SOURCES)
 	@if not exist output mkdir output
