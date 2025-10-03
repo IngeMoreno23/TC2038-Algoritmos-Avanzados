@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++23 -Wall
 TARGET = output/main
-SOURCES = act2.3/arbolesTrie.cpp
+SOURCES = actClase14/casaDamian2.cpp
 
 $(TARGET): $(SOURCES)
 	@if not exist output mkdir output
